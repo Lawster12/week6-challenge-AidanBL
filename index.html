@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Weather Dashboard</title>
+</head>
+<body>
+  <h1>Weather Dashboard</h1>
+  <main>
+
+  <!-- Form for user input -->
+  <form id="city-form">
+    <input type="text" id="city-input" placeholder="Enter city name">
+    <button type="submit">Search</button>
+  </form>
+  <div>
+  <ul id="search-history-list" class="text-xl text-black"></ul>
+  </div>
+  <!-- Container for displaying weather data -->
+  <div id="weather-info" class="text-xl text-center my-2 text-black w-full">
+    <!-- Current weather data will be displayed here -->
+    <div id="current-weather"></div>
+
+    <!-- 5-day forecast data will be displayed here -->
+    <div id="forecast" class="w-full flex justify-evenly text-xl text-center my-2 text-black"></div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</main>
+</body>
+</html>
